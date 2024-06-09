@@ -5,7 +5,7 @@ from matplotlib import font_manager, rc
 from matplotlib.ticker import MaxNLocator
 
 def load_data():
-    data = pd.read_csv(file_path)
+    data = pd.read_csv(전력 revenge3.csv)
     data.set_index('date', inplace=True)
     return data
 

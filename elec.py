@@ -4,9 +4,8 @@ import numpy as np
 from matplotlib import font_manager, rc
 from matplotlib.ticker import MaxNLocator
 
-def load_data(file_path):
+def load_data():
     data = pd.read_csv(file_path)
-    data['date'] = pd.to_datetime(data[['year', 'month', 'day']])
     data.set_index('date', inplace=True)
     return data
 
